@@ -1,0 +1,285 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ececec;
+}
+
+html {
+    height: 100%;
+}
+
+* {
+    display: flex;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 210vh;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #f7f6ff;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.me-header {
+    font-weight: bold;
+    font-size: 30px;
+    color: #4D4D4D;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.me-header-text {
+    font-size: 25px;
+    color: #121212;
+}
+
+.me-header {
+    flex: 1;
+}
+
+/* slider */
+.container-slider {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+/*Main*/
+
+main {
+    display: flex;
+    flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    padding: 20px;
+    flex-direction: column;
+    height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.main-school {
+    flex-direction: row;
+    background-color: #ffffff;
+    border: solid 1px #bababa;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.main-oggeto {
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+.main-school-picture {
+    flex: 1;
+
+}
+
+.main-school-picture > img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.main-school-descr {
+    flex: 2;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.oggeto {
+    flex: 4;
+}
+
+.main-skills {
+    display: flex;
+    flex-direction: row;
+    max-height: 350px;
+    margin-top: 50px;
+}
+
+
+.skill {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    border: solid 1px #bababa;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.skill:hover {
+    flex: 4;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    height: 400px;
+}
+
+.skill:hover > .skill-header {
+    height: 200px;
+    width: 200px;
+    border-radius: 150px;
+    transition: 0.5s;
+}
+
+.skill:hover > .skill-hidden-text {
+    display: flex;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    align-self: center;
+    border: solid 1px #bababa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.skill-header > p {
+    font-size: 50px;
+}
+
+.js {
+    background-color: #ffeb00;
+}
+
+.css {
+    background-color: #428eff;
+}
+
+.html {
+    background-color: #ff3516;
+}
+
+
+.skill-descr {
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+.skill-hidden-text {
+    display: none;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+}
+
+.main-about {
+    margin-top: 50px;
+}
+
+/*footer*/
+
+footer {
+    height: 200px;
+    background-color: #212121;
+    flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    padding: 20px;
+}
+
+footer > div {
+    flex: 1;
+    justify-content: center;
+    transition: 1s;
+}
+
+.button-link {
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+    flex-direction: column;
+
+}
+
+.button-link > div {
+    justify-content: center;
+    align-items: center;
+}
+
+.button-link-icon {
+    font-size: 30px;
+}
+
+.phone {
+    background-color: #f9f6ff;
+}
+
+.email {
+    background-color: #c5d119;
+}
+
+.vk {
+    background-color: #428eff;
+}
+
+.button-link-text {
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    header{
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-skills {
+        height: 1100px;
+        max-height: none;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    body {
+        height: 195vh;
+    }
+}
+
+
+
+
